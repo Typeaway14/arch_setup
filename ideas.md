@@ -1,0 +1,2 @@
+- Add json file with script name and dirrectory of where it needs to be placed for shell script to refer and setup there
+- wallpapers in /usr/share/wallpapers

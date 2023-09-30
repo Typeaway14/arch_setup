@@ -1,0 +1,90 @@
+#
+# ~/.bashrc
+#
+
+export HISTCONTROL=ignoreboth
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+export PROMPT_COMMAND='history -a'
+export HISTIGNORE=""
+
+shopt -s histappend
+
+source /usr/share/doc/pkgfile/command-not-found.bash
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+PS1='[\u@\h \W]\$ '
+
+
+
+## MY OWN ALIASES 
+
+# # ex = EXtractor for all kinds of archives
+# # usage: ex <file>
+ex ()
+{
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xjf $1   ;;
+      *.tar.gz)    tar xzf $1   ;;
+      *.bz2)       bunzip2 $1   ;;
+      *.rar)       unrar x $1   ;;
+      *.gz)        gunzip $1    ;;
+      *.tar)       tar xf $1    ;;
+      *.tbz2)      tar xjf $1   ;;
+      *.tgz)       tar xzf $1   ;;
+      *.zip)       unzip $1     ;;
+      *.Z)         uncompress $1;;
+      *.7z)        7z x $1      ;;
+      *.deb)       ar x $1      ;;
+      *.tar.xz)    tar xf $1    ;;
+      *.tar.zst)   tar xf $1    ;;
+      *)           echo "'$1' cannot be extracted via ex()" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
+}
+
+# Commands
+alias bt='bluetoothctl'
+alias exp='nohup thunar . & disown && rm nohup.out ; exit'
+alias cp='cp -i'
+alias sht='systemctl poweroff'
+alias x='exit'
+alias n='nnn'
+alias e='thunar'
+alias dosa='sudo'
+alias loff='xrandr --output eDP --brightness'
+alias qsys="qemu-system-x86_64"
+alias b='cat /sys/class/power_supply/BAT0/capacity '
+alias df='df -h'
+alias rr='~/my-bash-scripts/roll.sh'
+alias ts='timedatectl set-ntp true'
+alias sp='sudo system76-power'
+alias screenrec='ffmpeg -f x11grab -i :0.0 -f alsa -i hw:1'
+
+# ls alias for eza
+
+alias l='eza -al --color=always --group-directories-first'
+alias la='eza -a --color=always --group-directories-first'
+alias ll='eza -l --color=always --group-directories-first'
+alias lt='eza -aT --color=always --group-directories-first'
+alias l.='eza -a | grep -E "^\."'
+
+# navigational
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../../'
+alias pes="cd ~/documents/PES_Notes/SEM5"
+
+
+
+~/my-bash-scripts/cowsay_art
+eval "$(starship init bash)"
