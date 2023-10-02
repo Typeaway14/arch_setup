@@ -24,7 +24,8 @@ from os.path import expanduser
 HOME = expanduser("~")
 
 # Define constants here
-TERMINAL = "kitty"
+# TERMINAL = "kitty"
+TERMINAL = "xfce4-terminal"
 
 
 # Basic window manager movements
@@ -94,10 +95,16 @@ APPS = [
     ([MOD, ALT], "n", TERMINAL + " -e nvim"),
     ([MOD, ALT],      "x", "bash -c xkill"),
     ([MOD, ALT],      "m", TERMINAL+" -e nmtui"),
-    ([MOD, ALT],      "c", TERMINAL+" --directory ~/.config/ -e nvim"),
-    ([MOD, ALT],      "b", TERMINAL+" --directory ~/.config/qutebrowser/ -e nvim ./config.py"),
-    ([MOD, ALT],      "q", TERMINAL+" --directory ~/.config/qtile/ -e nvim ./config.py"),
-    ([MOD, ALT],      "p", TERMINAL+" --directory ~/.config/polybar/ -e nvim ./config.ini"),
+    #### USE IF TERMINAL IS SET TO KITTY ####
+    # ([MOD, ALT],      "c", TERMINAL+" --directory ~/.config/ -e nvim"),
+    # ([MOD, ALT],      "b", TERMINAL+" --directory ~/.config/qutebrowser/ -e nvim ./config.py"),
+    # ([MOD, ALT],      "q", TERMINAL+" --directory ~/.config/qtile/ -e nvim ./config.py"),
+    # ([MOD, ALT],      "p", TERMINAL+" --directory ~/.config/polybar/ -e nvim ./config.ini"),
+    #### USE IF TERMINAL IS SET TO XFCE4-TERMINAL ####
+    ([MOD, ALT],      "c", '''xfce4-terminal -e "bash -c 'cd ~/.config/ ; nvim'"'''),
+    ([MOD, ALT],      "b", '''xfce4-terminal -e "bash -c 'cd ~/.config/qutebrowser ; nvim config.py'"'''),
+    ([MOD, ALT],      "q", '''xfce4-terminal -e "bash -c 'cd ~/.config/qtile ; nvim config.py'"'''),
+    ([MOD, ALT],      "p", '''xfce4-terminal -e "bash -c 'cd ~/.config/polybar ; nvim config.ini'"'''),
 
     # Webpages
     ([MOD,CONTROL], "m", "firefox --new-window monkeytype.com"),

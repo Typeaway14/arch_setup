@@ -67,6 +67,7 @@ unzip \
 vi \
 telegram-desktop \
 vim \
+libreoffice \
 arandr \
 vlc \
 playerctl \
