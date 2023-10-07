@@ -226,7 +226,6 @@ c.input.partial_timeout = 0
 c.url.searchengines = \
     {'DEFAULT': 'https://duckduckgo.com/?kam=google-maps&kp=-2&q={}',
      'am': "https://www.amazon.in/s?k={}",
-     'aw': 'https://wiki.archlinux.org/index.php?search={}',
      'az': 'https://search.azlyrics.com/search.php?q={}',
      'gh': 'https://github.com/search?q={}',
      'sp': 'https://www.startpage.com/do/search?query={}&prfe=36c84513558a2d34bf0d89ea505333ad25eaad7546bb0b480adc2e9be9271a9b54b2adb3b1f304d3530bea21aa54bdf5',  # noqa: E501
@@ -238,6 +237,8 @@ c.url.searchengines = \
      'ma': 'https://www.google.com/maps/search/{}',
      'do': 'https://www.oanda.com/currency-converter/en/?from=USD&to=INR&amount={}',
      'aur': 'https://aur.archlinux.org/packages?O=0&K={}',
+     'aw': 'https://wiki.archlinux.org/index.php?search={}',
+     'af': 'https://bbs.archlinux.org/search.php?action=search&keywords={}',
     }
 
 # ** Media

@@ -15,13 +15,13 @@ ln -s $HOME/documents/arch_setup/config/bashrc ~/.bashrc
 ./add_configs.sh
 
 #Start systemctl services
-# ./systemctl_start.sh
+./systemctl_start.sh
 
 #Setup wallpapers for grub and nitrogen
 ./set_wallpapers.sh
 
 #Add SDDM theme
-# ./set_sddm.sh
+./set_sddm.sh
 
 #Add fonts 
 

@@ -52,7 +52,7 @@ ex ()
 
 # Commands
 alias bt='bluetoothctl'
-alias exp='nohup thunar . & disown && rm nohup.out ; exit'
+alias exp='nohup thunar . & disown ; rm nohup.out ; exit'
 alias cp='cp -i'
 alias sht='systemctl poweroff'
 alias x='exit'
