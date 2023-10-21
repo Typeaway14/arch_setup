@@ -50,7 +50,10 @@ if __name__ in ["config", "__main__"]:
 
 dgroups_key_binder = None
 
-dgroups_app_rules = []  # type: list
+dgroups_app_rules = [
+        # Rule(Match(wm_class=['qutebrowser']), group="2"),
+        # Rule(Match(wm_class=['spotify-launcher']), group="7"),
+        ]  # type: list
 
 follow_mouse_focus = True
 
@@ -70,7 +73,8 @@ floating_layout = layout.Floating(float_rules=[
     Match(title='branchdialog'),  # gitk
     Match(title='pinentry'),  # GPG key password entry
 ])
-auto_fullscreen = True
+
+auto_fullscreen = False 
 
 focus_on_window_activation = "smart"
 

@@ -4,7 +4,7 @@ from libqtile import layout
 class Layouts:
     def __init__(self):
         self.default = {
-            "border_width": 2,
+            "border_width": 3,
             "margin":8,
             "border_focus": "#e1acff",
             "border_normal": "#4c566a"}
@@ -16,6 +16,7 @@ class Layouts:
         layouts = [
             layout.Max(**self.default),
             layout.MonadTall(**self.default),
+            layout.MonadWide(**self.default),
             layout.floating.Floating(**self.default),
             layout.TreeTab(
                 font="IosevkaNerdMono",

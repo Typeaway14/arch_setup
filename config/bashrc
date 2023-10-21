@@ -64,6 +64,7 @@ alias qsys="qemu-system-x86_64"
 alias b='cat /sys/class/power_supply/BAT0/capacity '
 alias df='df -h'
 alias rr='~/my-bash-scripts/roll.sh'
+alias mm='~/.screenlayout/home_monitor.sh'
 alias ts='timedatectl set-ntp true'
 alias sp='sudo system76-power'
 alias screenrec='ffmpeg -f x11grab -i :0.0 -f alsa -i hw:1'

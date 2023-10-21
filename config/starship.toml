@@ -76,7 +76,7 @@ symbol = " "
 symbol = " "
 
 [golang]
-symbol = " "
+symbol = "󰟓 "
 
 [hg_branch]
 symbol = " "

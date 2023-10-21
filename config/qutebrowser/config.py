@@ -245,7 +245,8 @@ c.url.searchengines = \
 c.content.autoplay = False
 
 # **Zoom default settings
-c.zoom.default = 100
+c.zoom.default = 75 
+# c.zoom.default = 100
 
 # **Dark Mode
 # config.set("colors.webpage.darkmode.enabled",True)
