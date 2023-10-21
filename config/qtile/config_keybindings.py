@@ -17,8 +17,6 @@ from libqtile.confreader import ConfigError
 # Import default mod keys
 from keys.default import *
 
-from functions import PWA
-
 from os.path import expanduser
 
 HOME = expanduser("~")
@@ -112,24 +110,4 @@ APPS = [
     
 ]
 
-##########################
-# Your custom keys here  #
-##########################
-
-CUSTOM_SPAWN_KEYS = [
-    # PWA keys
-    ([MOD, ALT], "s", PWA.spotify()),
-    # ([MOD, ALT], "m", PWA.music()),
-    ([MOD, ALT], "t", PWA.calendar()),
-    ([MOD, ALT], "y", PWA.youtube()),
-    ([MOD, ALT], "l", PWA.notion()),
-    ([MOD, ALT], "h", PWA.habitica()),
-]
-
-
-SPAWN_KEYS = HARDWARE_KEYS + APPS + CUSTOM_SPAWN_KEYS 
-
-SPAWN_CMD_KEYS = [
-    # Takes full screenshot and creates a file on the screenshot folder
-    ([SHIFT],    "Print", f"xfce4-screenshooter -f -s {HOME}/Pictures/Screenshots/"),
-]
+SPAWN_KEYS = HARDWARE_KEYS + APPS 

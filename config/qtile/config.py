@@ -10,8 +10,6 @@ from libqtile.config import Group, Match
 
 # Local Files
 from keys.keybindings import Mouse,Keybindings
-
-from widgets import MyWidgets
 from layouts import Layouts
 from groups import CreateGroups
 from icons import group_icons
@@ -26,7 +24,6 @@ if __name__ in ["config", "__main__"]:
 
     # Mouse
     obj_mouse         = Mouse()
-    obj_widgets       = MyWidgets()
     obj_layouts       = Layouts()
     obj_groups        = CreateGroups()
     
@@ -43,8 +40,6 @@ if __name__ in ["config", "__main__"]:
 
     # screens           = obj_widgets.init_screen()
     screens = []
-    main_widgets_list = obj_widgets.init_widgets_list()
-    widgets_screen1   = obj_widgets.init_widgets_screen()
 
 
 
