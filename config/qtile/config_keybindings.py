@@ -61,7 +61,7 @@ HARDWARE_KEYS = [
     ([CONTROL], "XF86AudioPrev", "playerctl position 5- -p spotify"),
     ([], "XF86AudioPlay", "playerctl play-pause -p spotify"),
     ([CONTROL], "XF86AudioPlay", "playerctl play-pause -a"),
-    ([CONTROL], "space", "playerctl play-pause -a"),
+    # ([CONTROL], "space", "playerctl play-pause -a"),
     ([], "XF86AudioNext", "playerctl next"),
     ([CONTROL], "XF86AudioNext", "playerctl position 5+ -p spotify"),
 ]
@@ -72,6 +72,7 @@ APPS = [
 
     #Applications
     ([MOD], "Return", TERMINAL),
+    # ([MOD,CONTROL], "Return", "kitty"),
     ([MOD],      "e", "thunar"),
     ([MOD], "a", "pavucontrol"),
     ([MOD],      "b", "qutebrowser"),
@@ -92,7 +93,7 @@ APPS = [
     # Terminal apps
     ([MOD, ALT], "n", TERMINAL + " -e nvim"),
     ([MOD, ALT],      "x", "bash -c xkill"),
-    ([MOD, ALT],      "m", TERMINAL+" -e nmtui"),
+    ([MOD, ALT],      "m", "kitty -e nmtui"),
     #### USE IF TERMINAL IS SET TO KITTY ####
     # ([MOD, ALT],      "c", TERMINAL+" --directory ~/.config/ -e nvim"),
     # ([MOD, ALT],      "b", TERMINAL+" --directory ~/.config/qutebrowser/ -e nvim ./config.py"),

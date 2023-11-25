@@ -17,6 +17,7 @@ class Layouts:
             layout.Max(**self.default),
             layout.MonadTall(**self.default),
             layout.MonadWide(**self.default),
+            layout.Spiral(**self.default),
             layout.floating.Floating(**self.default),
             layout.TreeTab(
                 font="IosevkaNerdMono",

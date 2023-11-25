@@ -14,7 +14,8 @@ function run {
     fi
 }
 
-picom &
+# picom &
+compfy --daemon
 nitrogen --restore & 
 ~/.config/polybar/launch.sh &
 # xrandr --output eDP --brightness 0.4

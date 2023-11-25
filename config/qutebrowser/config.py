@@ -235,7 +235,7 @@ c.url.searchengines = \
      'os': 'https://wiki.osdev.org/index.php?title=Special%3ASearch&search={}',
      'go': 'https://www.google.com/search?q={}',
      'ma': 'https://www.google.com/maps/search/{}',
-     'do': 'https://www.oanda.com/currency-converter/en/?from=USD&to=INR&amount={}',
+     'dol': 'https://www.oanda.com/currency-converter/en/?from=USD&to=INR&amount={}',
      'aur': 'https://aur.archlinux.org/packages?O=0&K={}',
      'aw': 'https://wiki.archlinux.org/index.php?search={}',
      'af': 'https://bbs.archlinux.org/search.php?action=search&keywords={}',
@@ -245,8 +245,8 @@ c.url.searchengines = \
 c.content.autoplay = False
 
 # **Zoom default settings
-c.zoom.default = 75 
-# c.zoom.default = 100
+# c.zoom.default = 75 
+c.zoom.default = 100
 
 # **Dark Mode
 # config.set("colors.webpage.darkmode.enabled",True)

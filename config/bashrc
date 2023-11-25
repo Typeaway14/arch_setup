@@ -52,7 +52,8 @@ ex ()
 
 # Commands
 alias bt='bluetoothctl'
-alias exp='nohup thunar . & disown ; rm nohup.out ; exit'
+# alias exp='nohup thunar . & disown ; rm nohup.out ; exit'
+alias exp='thunar . & disown'
 alias cp='cp -i'
 alias sht='systemctl poweroff'
 alias x='exit'
@@ -63,17 +64,24 @@ alias loff='xrandr --output eDP --brightness'
 alias qsys="qemu-system-x86_64"
 alias b='cat /sys/class/power_supply/BAT0/capacity '
 alias df='df -h'
-alias rr='~/my-bash-scripts/roll.sh'
+alias rr='curl -s -L https://bit.ly/3zvELNz | bash'
 alias mm='~/.screenlayout/home_monitor.sh'
+alias lm='~/.screenlayout/laptop_monitor.sh'
+alias dm='~/.screenlayout/dual_monitor.sh'
 alias ts='timedatectl set-ntp true'
 alias sp='sudo system76-power'
 alias screenrec='ffmpeg -f x11grab -i :0.0 -f alsa -i hw:1'
 
-# ls alias for eza
+#git aliases
+alias gs='git status'
+alias gaa='git add -A'
+alias gc='git commit -m'
+alias gpm='git push origin main'
 
-alias l='eza -al --color=always --group-directories-first'
+# ls alias for eza
+alias ll='eza -al --color=always --group-directories-first'
 alias la='eza -a --color=always --group-directories-first'
-alias ll='eza -l --color=always --group-directories-first'
+alias l='eza -l --color=always --group-directories-first'
 alias lt='eza -aT --color=always --group-directories-first'
 alias l.='eza -a | grep -E "^\."'
 
@@ -89,3 +97,5 @@ alias pes="cd ~/documents/PES_Notes/SEM5"
 
 ~/my-bash-scripts/cowsay_art
 eval "$(starship init bash)"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
