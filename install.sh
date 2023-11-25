@@ -40,7 +40,6 @@ ntfs-3g \
 ntp \
 os-prober \
 pavucontrol \
-picom \
 polybar \
 pulseaudio \
 pulseaudio-bluetooth \
@@ -63,6 +62,7 @@ sudo \
 sshfs \
 sxhkd \
 thunar \
+xclip \
 unzip \
 vi \
 telegram-desktop \
@@ -80,6 +80,7 @@ AUR_PACKAGES="\
 pulseaudio-ctl \
 qtile-extras-git \
 rofi-power-menu \
+compfy \
 whatsdesk-bin \
 ruby-mdless \
 zscroll-git"
