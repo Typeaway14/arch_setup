@@ -9,8 +9,10 @@ ln -s $HOME/documents/arch_setup/config/Xresources ~/.Xresources
 
 #Adding picom config
 rm -rf ~/.config/picom.conf
+rm -rf ~/.config/compfy
 # cp -r ./config/picom.conf ~/.config/
-ln -s $HOME/documents/arch_setup/config/picom.conf ~/.config/picom.conf
+# ln -s $HOME/documents/arch_setup/config/picom.conf ~/.config/picom.conf
+ln -s $HOME/documents/arch_setup/config/compfy/ ~/.config/
 
 #Adding startship.toml to .config
 rm ~/.config/starship.toml
