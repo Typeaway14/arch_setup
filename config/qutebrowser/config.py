@@ -239,6 +239,7 @@ c.url.searchengines = \
      'aur': 'https://aur.archlinux.org/packages?O=0&K={}',
      'aw': 'https://wiki.archlinux.org/index.php?search={}',
      'af': 'https://bbs.archlinux.org/search.php?action=search&keywords={}',
+     'in': 'https://dir.indiamart.com/search.mp?ss={}',
     }
 
 # ** Media
@@ -287,6 +288,9 @@ nmap('tt', 'open --tab')
 # open new private window
 nmap('tp', 'open -p')
 
+#Reopen closed windows
+nmap('U', ':undo --window')
+
 # swap o and O behaviour
 nmap('o', 'cmd-set-text -s :open --tab')
 nmap('O', 'cmd-set-text -s :open')
@@ -321,6 +325,7 @@ nmap("'dm", ':open --tab https://drive.google.com/drive/u/2/my-drive')#spam gdri
 nmap("'dM", ':open --tab https://drive.google.com/drive/u/3/my-drive')#MUNSoc gdrive   
 nmap("'dS", ':open --tab https://drive.google.com/drive/u/4/my-drive')#spam gdrive     
 nmap("'cS", ':open --tab https://calendar.google.com/calendar/u/4')#spam gdrive     
+nmap("'os", ':open --tab https://pages.cs.wisc.edu/~remzi/OSTEP/')#spam gdrive     
 nmap("'O", ':open --tab https://onedrive.live.com/?id=root&cid=6FDBE9CD04F66FD1')
 nmap("'P", ':open --tab https://www.pesuacademy.com/Academy/')
 nmap("'M", ':open --tab https://monkeytype.com/')

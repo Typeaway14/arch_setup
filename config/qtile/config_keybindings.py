@@ -72,11 +72,10 @@ APPS = [
 
     #Applications
     ([MOD], "Return", TERMINAL),
-    # ([MOD,CONTROL], "Return", "kitty"),
     ([MOD],      "e", "thunar"),
     ([MOD], "a", "pavucontrol"),
     ([MOD],      "b", "qutebrowser"),
-    ([MOD],      "m", "whatsdesk"),
+    ([MOD],      "v", "whatsdesk"),
     ([MOD],      "t", "telegram-desktop"),
     ([MOD], "s", "spotify-launcher"),
 
@@ -92,8 +91,10 @@ APPS = [
 
     # Terminal apps
     ([MOD, ALT], "n", TERMINAL + " -e nvim"),
+    ([MOD, ALT], "Return", TERMINAL+" --working-directory=/home/harsh117/documents/PES_Notes/SEM5/"),
     ([MOD, ALT],      "x", "bash -c xkill"),
     ([MOD, ALT],      "m", "kitty -e nmtui"),
+    ([MOD, ALT],      "t", '''xfce4-terminal -e "bash -c 'cd ~/documents/Coding/TYRBO-on-terminal ; ./tyrbo b e'"'''),
     #### USE IF TERMINAL IS SET TO KITTY ####
     # ([MOD, ALT],      "c", TERMINAL+" --directory ~/.config/ -e nvim"),
     # ([MOD, ALT],      "b", TERMINAL+" --directory ~/.config/qutebrowser/ -e nvim ./config.py"),
@@ -107,6 +108,7 @@ APPS = [
 
     # Webpages
     ([MOD,CONTROL], "m", "firefox --new-window monkeytype.com"),
+    ([MOD,CONTROL], "s", "qutebrowser --target window fast.com"),
 
     
 ]
